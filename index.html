@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+	<link rel="stylesheet" href="style.css">	
+	<title>Ilkom Bootcamp | Projek Akhir</title>
+</head>
+<body>		
+	<nav>
+		<div id="logo">
+			<img src="logo_ppa.png">			
+		</div>
+		<ul>
+			<li><a href="#home">Beranda</a></li>
+			<li><a href="#about">Tentang</a></li>
+			<li><a href="#">Kontak</a></li>
+		</ul>		
+	</nav>
+	<header id="home">
+		<img src="https://image.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg">
+		<h1>Projek Akhir Bootcamp Ilmu Komputer</h1>		
+	</header>
+
+	<!-- Profil -->
+
+	<section>
+		<div id="about">
+			<h2>Profil Saya</h2>
+			<img src="https://github.com/Ifuran/ifuran.github.io/blob/master/profile.png?raw=true">			
+			<div id="data">
+				<table class="table table-bordered table-striped">		
+					<tbody>
+						<tr>
+							<th>Nama</th>
+							<td>Ifran Silalahi</td>				
+						</tr>
+						<tr>
+							<th>Tempat Lahir</th>
+							<td>Air Molek</td>				
+						</tr>
+						<tr>
+							<th>Tanggal Lahir</th>
+							<td>2 Februari 2002</td>				
+						</tr>
+						<tr>
+							<th>NIM</th>
+							<td>1903036168</td>				
+						</tr>
+						<tr>
+							<th>Prodi</th>
+							<td>Manajemen Informatika</td>				
+						</tr>
+					</tbody>
+				</table>
+			</div>			
+		</div>			
+	</section>
+
+	<!-- Kalkulator -->
+
+	<aside>
+		<div id="kalkulator">
+			<h2>Web Kalkulator</h2>
+			<div class="tombol">
+				<input type="text" value="" placeholder="0" id="display">
+				<div class="baris-satu">
+					<input type="button" value="C" class="btn" onclick="clean()" style="width: 148px">
+					<input type="button" value="DEL" class="btn" onclick="backspace()">
+					<input type="button" value="/" class="btn" onclick="view('/')">					
+				</div>
+				<div class="baris-dua">
+					<input type="button" value="7" class="btn" onclick="view(7)">
+					<input type="button" value="8" class="btn" onclick="view(8)">
+					<input type="button" value="9" class="btn" onclick="view(9)">
+					<input type="button" value="*" class="btn" onclick="view('*')">
+				</div>
+				<div class="baris-tiga">
+					<input type="button" value="4" class="btn" onclick="view(4)">
+					<input type="button" value="5" class="btn" onclick="view(5)">
+					<input type="button" value="6" class="btn" onclick="view(6)">
+					<input type="button" value="-" class="btn" onclick="view('-')">
+				</div>
+				<div class="baris-empat">
+					<input type="button" value="1" class="btn" onclick="view(1)">
+					<input type="button" value="2" class="btn" onclick="view(2)">
+					<input type="button" value="3" class="btn" onclick="view(3)">
+					<input type="button" value="+" class="btn" onclick="view('+')">
+				</div>
+				<div class="baris-lima">
+					<input type="button" value="0" class="btn" onclick="view(0)" style="width: 148px">
+					<input type="button" value="." class="btn" onclick="view('.')">
+					<input type="button" value="=" class="btn" onclick="equal()">
+				</div>
+			</div>
+		</div>		
+	</aside>	
+	<footer>
+		<p>Created by <b>Ifuran</b></p>
+		<div id="contact">
+			<a href="https://instagram.com/ifransilalahi" target="_blank"><i class="fab fa-instagram"></i></a>
+	        <a href="https://t.me/ifransilalahii" target="_blank"><i class="fab fa-telegram"></i></a>
+	        <a href="https://github.com/Ifuran" target="_blank"><i class="fab fa-github"></i></a>
+		</div>        
+	</footer>	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

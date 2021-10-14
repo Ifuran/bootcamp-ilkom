@@ -1,0 +1,214 @@
+/*Font Google*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+
+}
+nav	{
+	display: flex;
+	justify-content: space-around;	
+	background-color: #10101d;		
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+#logo img {
+	align-content: center;
+	width: 35px;
+	margin-top: 2px;	
+}
+#logo:after {
+	content: "Ilkom Bootcamp";
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+}
+nav ul {
+	display: flex;
+	margin-top: 10px;	
+}
+nav ul li {
+	list-style: none;
+	margin: 0px 15px;	
+}
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+nav ul li a:hover {
+	text-decoration: underline;
+	color: #d3cccc;
+}
+header {
+	height: 700px;
+}
+header img {
+	position: absolute;
+	top: 155px;
+	left: 155px;	
+}
+header h1 {
+	position: absolute;
+	top: 325px;
+	right: 100px;
+	width: 480px;	
+	font-weight: 600;
+}
+section {	
+	height: 800px;	
+}
+#about {	
+	margin-left: 125px;
+	width: 500px;
+	padding-bottom: 25px;
+	text-align: center;
+	box-shadow: 0px 0px 10px 10px #d3cccc;	
+}
+#about img {
+	width: 220px;
+	margin-bottom: 50px;
+	border-radius: 45%;
+}
+#about h2 {
+	padding: 50px;
+	font-weight: 600;
+}
+#data {
+	text-align: left;
+	margin: 20px;
+	font-weight: 300;
+}
+aside {	
+	position: absolute;
+	top: 850px;
+	right: 20%;	
+}
+#kalkulator h2 {
+	text-align: center;
+	font-weight: bold;
+}
+.tombol {
+	padding-top: 25px;
+}
+#display {	
+    padding: 45px;
+    margin-bottom: 2px;
+    width: 300px;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 5px; 
+    box-shadow: 0px 0px 2px 2px #d3cccc; 
+    border: none;   
+}
+input {	    
+    width: 72px;
+    height: 55px;     
+    color: black; 
+    font-weight: bold;   
+}
+.btn {
+	margin-top: 4px;	
+	box-shadow: 0px 0px 2px 2px #d3cccc;
+	font-weight: bold;
+}
+footer {
+	background-color: #10101d;
+	color: #fff;
+	text-align: center;
+}
+#contact {
+	display: flex;	
+	justify-content: center;
+}
+footer p {
+	padding-top: 5px;
+	margin: 5px;
+}
+.fab {
+	margin: 0px 10px 10px 10px;	
+	color: #fff;
+	font-size: 24px;
+}
+
+/*Responsive*/
+/*Ukuran Tablet*/
+
+@media (max-width: 780px) {
+	header img {		
+		left: 75px;
+		margin: 100px 0px;
+		width: 550px;
+	}
+	header h1 {		
+		top: 120px;		
+		text-align: center;			
+		font-weight: 600;
+	}	
+	section {
+		height: 1300px;
+	}
+	#about {
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	aside {
+
+	}
+	#kalkulator {		
+		margin-top: 650px;			
+	}
+	#kalkulator h2 {
+		padding-right: 100px;				
+	}
+	.tombol {
+		margin: auto;
+		margin-left: -15px;
+	}
+	footer {
+		bottom: 0;
+	}
+
+}
+
+/*Responsive*/
+/*Ukuran Mobile*/
+
+@media (max-width: 670px) {	
+	nav ul {
+		visibility: hidden;
+	}
+	header img {		
+		left: 55px;
+		margin: 100px 0px;
+		width: 400px;
+	}
+	header h1 {		
+		top: 120px;
+		left: 35px;		
+		text-align: center;			
+		font-weight: 600;
+		font-size: 34px;
+		width: 400px;
+	}
+	#about {			
+		width: 350px;
+		padding-bottom: 0px;
+
+		text-align: center;
+		box-shadow: 0px 0px 10px 10px #d3cccc;	
+	}
+	
+	#kalkulator h2 {
+		padding-right: 10px;				
+	}
+	.tombol {
+		
+	}
+}
